@@ -1,0 +1,35 @@
+img {
+    width: 8%;
+}
+
+h1 {
+    color: red;
+}
+
+.header p {
+    width: 5.5%;
+    color: white;
+    background-color: blue;
+}
+
+.main {
+    margin-top: 100px;
+}
+
+h2 {
+    color: white;
+    background-color: green;
+}
+
+.what_i_can {
+    padding: 50px;
+}
+
+.forms {
+    margin-left: 100px;
+}
+
+.first_list li {
+    font-size: 30px;
+    border: 1px solid black;
+}
