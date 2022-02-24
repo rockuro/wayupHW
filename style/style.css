@@ -6,15 +6,11 @@ img {
     width: 8%;
 }
 
-span {
+h1, span {
     color: red;
 }
 
-h1 {
-    color: red;
-}
-
-.header p {
+.small_paragrapher {
     width: 5.5%;
     color: white;
     background-color: blue;
