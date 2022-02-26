@@ -1,39 +1,179 @@
 body {
-    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    color: #000;
 }
 
-img {
-    width: 8%;
+div, p, input, button, form, span, a, ul, li {
+	box-sizing: border-box;
 }
 
-h1, span {
-    color: red;
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
 }
 
-.small_paragrapher {
-    width: 5.5%;
-    color: white;
-    background-color: blue;
+p {
+    margin: 0;
+    line-height: 1.65em;
 }
 
-.main {
-    margin-top: 100px;
+.header {
+    background: rgba(78,189,254,1);
+    background: -moz-linear-gradient(left, rgba(78,189,254,1) 0%, rgba(55,144,217,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(78,189,254,1)), color-stop(100%, rgba(55,144,217,1)));
+    background: -webkit-linear-gradient(left, rgba(78,189,254,1) 0%, rgba(55,144,217,1) 100%);
+    background: -o-linear-gradient(left, rgba(78,189,254,1) 0%, rgba(55,144,217,1) 100%);
+    background: -ms-linear-gradient(left, rgba(78,189,254,1) 0%, rgba(55,144,217,1) 100%);
+    background: linear-gradient(to right, rgba(78,189,254,1) 0%, rgba(55,144,217,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4ebdfe', endColorstr='#3790d9', GradientType=1 );
+    color: #fff;
 }
 
-h2 {
-    color: white;
-    background-color: green;
+.wrap {
+    display: flex;
+    justify-content: space-between;
 }
 
-.what_i_can {
-    padding: 50px;
+.container {
+    width: 1170px;
+    margin: 0 auto;
 }
 
-.forms {
-    margin-left: 100px;
+.logo {
+    padding-top: 62px;
 }
 
-.first_list li {
+.offer {
+    margin-top: 145px;
+}
+
+.title {
+    width: 565px;
+    font-size: 37px;
+    font-weight: 700;
+    line-height: 49px;
+}
+
+.title span {
+    font-size: 59px;
+    line-height: 73px;
+}
+
+.intro {
+    font-family: 'Open Sans', sans-serif;
+    margin: 45px 0;
+    width: 400px;
+    font-size: 16px;
+}
+
+.button {
+    font-family: 'Montserrat', sans-serif;
+    background: #ffd429;    
+    color: #000;
+    display: block;
+    width: 222px;
+    padding: 22px 0;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background: #caa100;
+}
+
+.travel {
+    margin-top: 59px;
+    padding-bottom: 145px;
+}
+
+.will_be {
+    padding-top: 105px;
+    padding-bottom: 120px;
+}
+
+.section_title {
     font-size: 30px;
-    border: 1px solid black;
+    text-align: center;
+}
+
+.future {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 75px;
+    text-align: center;
+}
+
+.future_title {
+    font-size: 19px;
+    padding-top: 98px;
+}
+
+.future_discr {
+    margin-top: 20px;
+}
+
+.time {
+    background: url('../img/time.png') no-repeat top;
+    width: 300px;
+}
+
+.beach {
+    background: url('../img/beach.png') no-repeat top;
+    width: 270px;
+}
+
+.rocket {
+    background: url('../img/rocket.png') no-repeat top;
+    width: 310px;
+}
+
+.ticket {
+    background: #ecf3f8;
+    padding-top: 110px;
+    align-items: center;
+    padding-bottom: 68px;
+}
+
+.form {
+    margin-top: 45px;
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    margin: auto;
+    margin-top: 15px;
+    width: 343px;
+    height: 47px;
+    border: 1px solid #bbbbbb;
+    font-size: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    border-radius: 3px;
+    padding-left: 24px;
+}
+
+.btn_form {
+    border: 0;
+    font-size: 15px;
+    cursor: pointer;
+    width: 343px;
+    height: 47px;
+    margin-top: 15px;
+    padding: 15px 0;
+}
+
+.footer {
+    background: #164d7a;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    padding-top: 62px;
+    padding-bottom: 62px;
 }
