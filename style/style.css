@@ -32,8 +32,10 @@ p {
 }
 
 .wrap {
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items:center;
 }
 
 .container {
@@ -43,10 +45,6 @@ p {
 
 .logo {
     padding-top: 62px;
-}
-
-.offer {
-    margin-top: 145px;
 }
 
 .title {
@@ -115,19 +113,23 @@ p {
     margin-top: 20px;
 }
 
+.time, .beach, .rocket {
+    width: 289px;
+}
+
 .time {
     background: url('../img/time.png') no-repeat top;
-    width: 300px;
+    
 }
 
 .beach {
     background: url('../img/beach.png') no-repeat top;
-    width: 270px;
+    
 }
 
 .rocket {
     background: url('../img/rocket.png') no-repeat top;
-    width: 310px;
+    
 }
 
 .ticket {
@@ -147,7 +149,7 @@ p {
 }
 
 .input {
-    margin: auto;
+    /* margin: auto; */
     margin-top: 15px;
     width: 343px;
     height: 47px;
@@ -176,4 +178,97 @@ p {
     color: #fff;
     padding-top: 62px;
     padding-bottom: 62px;
+}
+
+/*Responsive*/
+
+/* 992px - 1200px */
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 960px;
+    }
+    .wrap {
+        flex-direction: column;
+    }
+    .offer {
+        width: 100%;
+    }
+    .title {
+        margin-top: 145px;
+    }
+    .intro {
+        width: 100%;
+    }
+}
+
+/* 768px - 992px */
+@media screen and (max-width: 992px) {
+    .container {
+        width: 720px;
+    }    
+}
+
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+    .title {
+        width: auto;
+    }
+    .travel {
+        width: auto;
+        max-width: 100%;        
+    }
+    .container {
+        width: 540px;
+    }
+    .future {
+        flex-direction: column;
+    }
+    .time, .beach, .rocket {
+        width: auto;
+    }
+    .time, .beach, .rocket:not(:last-child){
+        margin-bottom: 50px;
+    }
+    .time {
+        background: url('../img/time.png') no-repeat left;
+        
+    }
+    
+    .beach {
+        background: url('../img/beach.png') no-repeat left;
+        
+    }
+    
+    .rocket {
+        background: url('../img/rocket.png') no-repeat left;
+        
+    }
+
+    .future {
+        text-align: left;
+    }
+
+    .future_title {
+        padding-top: 0;
+        padding-left: 98px;
+    }
+
+    .future_discr {
+        padding-left: 98px;
+    }
+
+    .input {
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+    }
+}
+
+/* 0 - 576px */
+@media screen and (max-width: 576px) {
+    .container {
+        width: 90%;
+    }
 }
